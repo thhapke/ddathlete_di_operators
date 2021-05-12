@@ -1,0 +1,30 @@
+{
+    "description": "Training Data",
+    "component": "com.sap.system.python3Operator",
+    "versionStatus": "active",
+    "outports": [
+        {
+            "name": "sql",
+            "type": "message.table"
+        },
+        {
+            "name": "log",
+            "type": "string"
+        }
+    ],
+    "icon": "database",
+    "config": {
+        "$type": "http://sap.com/vflow/ddathlete.TrainingData.configSchema.json",
+        "from_year": 2015,
+        "schema": "DATAONBOARDING#DATAINTELLIGENCE",
+        "script": "file://trainingdata.py",
+        "tables": [
+            "CYCLING_OUTDOOR",
+            "CYCLING_INDOOR",
+            "RUNNING",
+            "SWIMMING_POOL",
+            "SWIMMING_OPEN_WATER"
+        ],
+        "to_year": 2021
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "description": "Training Data by Minute",
+    "component": "com.sap.system.python3Operator",
+    "versionStatus": "active",
+    "outports": [
+        {
+            "name": "sql",
+            "type": "message"
+        }
+    ],
+    "icon": "database",
+    "config": {
+        "$type": "http://sap.com/vflow/ddathlete.TrainingDataByMinute.configSchema.json",
+        "schema": "DATAONBOARDING#DATAINTELLIGENCE",
+        "script": "file://trainingdataperminute.py",
+        "tables": [
+            "CYCLING_OUTDOOR",
+            "CYCLING_INDOOR",
+            "RUNNING",
+            "SWIMMING_POOL",
+            "SWIMMING_OPEN_WATER"
+        ]
+    }
+}

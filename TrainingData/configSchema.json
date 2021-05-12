@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "http://sap.com/vflow/ddathlete.TrainingData.configSchema.json",
+    "type": "object",
+    "properties": {
+        "codelanguage": {
+            "type": "string"
+        },
+        "script": {
+            "type": "string"
+        },
+        "schema": {
+            "title": "Schema",
+            "description": "Schema",
+            "type": "string"
+        },
+        "tables": {
+            "title": "Tables",
+            "description": "Tables",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "from_year": {
+            "title": "From Year",
+            "description": "From Year",
+            "type": "integer"
+        },
+        "to_year": {
+            "title": "To Year",
+            "description": "To Year",
+            "type": "integer"
+        }
+    }
+}

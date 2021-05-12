@@ -1,0 +1,27 @@
+{
+    "description": "Training Best Interval",
+    "component": "com.sap.system.python3Operator",
+    "versionStatus": "active",
+    "inports": [
+        {
+            "name": "input",
+            "type": "message.table"
+        }
+    ],
+    "outports": [
+        {
+            "name": "output",
+            "type": "message.table"
+        },
+        {
+            "name": "log",
+            "type": "string"
+        }
+    ],
+    "iconsrc": "maxinterval.svg",
+    "config": {
+        "$type": "http://sap.com/vflow/ddathlete.TrainingBestInterval.configSchema.json",
+        "interval_width": 10,
+        "script": "file://trainingbestinterval.py"
+    }
+}

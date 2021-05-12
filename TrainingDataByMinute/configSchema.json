@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "http://sap.com/vflow/ddathlete.TrainingDataByMinute.configSchema.json",
+    "type": "object",
+    "properties": {
+        "codelanguage": {
+            "type": "string"
+        },
+        "script": {
+            "type": "string"
+        },
+        "schema": {
+            "title": "Schema",
+            "description": "Schema",
+            "type": "string"
+        },
+        "tables": {
+            "title": "Tables",
+            "description": "List of Tables",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}
