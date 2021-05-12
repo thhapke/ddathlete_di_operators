@@ -33,6 +33,7 @@ def gen():
     tables = api.config.tables
     schema = api.config.schema
     
+    #just a change
     # loop over tables and years
     for i,t in enumerate(tables) : 
         
